@@ -37,12 +37,12 @@ analises = [
 
 st.title('Gerador de Relatório Financeiro:')
 
-empresa = st.sidebar.selectbox('Selecione a empresa:', empresas)
-trimestre = st.sidebar.selectbox('Selecione o trimestre:', trimestres)
-ano = st.sidebar.selectbox('Selecione o ano:', anos)
+empresa = st..selectbox('Selecione a empresa:', empresas)
+trimestre = st..selectbox('Selecione o trimestre:', trimestres)
+ano = st..selectbox('Selecione o ano:', anos)
 periodo = f"{trimestre} {ano}"
-idioma = st.sidebar.selectbox('Selecione o idioma:', idiomas)
-analise = st.sidebar.selectbox('Selecione a análise:', analises)
+idioma = st..selectbox('Selecione o idioma:', idiomas)
+analise = st..selectbox('Selecione a análise:', analises)
 
 if st.sidebar.button('Gerar Relatório - {analises}', analise):
     prompt = prompt_template.format(
