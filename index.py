@@ -43,7 +43,7 @@ periodo = f"{trimestre} {ano}"
 idioma = st.selectbox('Selecione o idioma:', idiomas)
 analise = st.selectbox('Selecione a análise:', analises)
 
-if st.button('Gerar Relatório - {analises}', analise):
+if st.button('Gerar Relatório'):
     prompt = prompt_template.format(
         empresa=empresa,
         periodo=periodo,
