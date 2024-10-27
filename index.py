@@ -2,11 +2,10 @@ import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 import os
-import yaml
 
-with open('config.yaml', 'r') as config_file:
-    config = yaml.safe_load(config_file)
-os.environ['GOOGLE_API_KEY'] = config['GOOGLE_API_KEY']
+GOOGLE_API_KEY = st.secrets["general"]["GOOGLE_API_KEY"]
+
+os.environ['GOOGLE_API_KEY'] = GOOGLE_API_KEY
 
 llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro', temperature=0)
 
