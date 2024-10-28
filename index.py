@@ -11,7 +11,7 @@ llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro', temperature=0)
 
 template = '''
 Você é um analista financeiro e consultor especializado em investimentos.
-Sua tarefa é elaborar um relatório financeiro detalhado sobre a empresa "{empresa}" referente ao período {período}, utilizando dados disponíveis na internet e em sua base de dados.
+Sua tarefa é elaborar um relatório financeiro detalhado sobre a empresa "{empresa}" referente ao período {periodo}, utilizando dados disponíveis na internet e em sua base de dados.
 
 Instruções:
 O relatório deve ser escrito em {idioma}.
