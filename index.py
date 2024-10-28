@@ -16,7 +16,7 @@ Sua tarefa é elaborar um relatório financeiro detalhado sobre a empresa "{empr
 Instruções:
 O relatório deve ser escrito em {idioma}.
 Inclua a seguinte análise:
-{análise}
+{analise}
 Estrutura e Requisitos:
 Introdução:
 
