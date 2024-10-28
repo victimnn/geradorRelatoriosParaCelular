@@ -11,7 +11,7 @@ llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro', temperature=0)
 
 template = '''
 Você é um analista financeiro.
-Escreva um relatório financeiro detalhado para a empresa "{empresa}" para o período {periodo}.
+você deve escrever um relatório financeiro detalhado sobre a empresa "{empresa}" para o período {periodo}.
 
 O relatório deve ser escrito em {idioma} e incluir a seguinte análise:
 {analise}
